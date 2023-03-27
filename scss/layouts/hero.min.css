@@ -1,0 +1,1 @@
+.hero{display:grid;grid-template-rows:repeat(8, 1fr)}.hero .block-dark{grid-column:1/5;grid-row:1/9}

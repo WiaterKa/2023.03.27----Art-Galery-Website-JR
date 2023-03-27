@@ -1,0 +1,34 @@
+//COLORS
+
+$primary-color: #444444;
+$secondary-color: #d5966c;
+$third-color: #151515;
+$fourth-color: #ffffff;
+
+@mixin primaryPar($color) {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: $color;
+}
+
+@mixin secondaryPar() {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: $third-color;
+}
+
+@mixin secondaryHeading($color) {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 6rem;
+  color: $color;
+  text-transform: uppercase;
+}
