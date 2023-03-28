@@ -74,19 +74,25 @@
       width: 80%;
       position: relative;
 
-      &::after {
-        content: url("../assets/icon-arrow-right.svg");
-        width: 20%;
-        height: 100%;
-        position: absolute;
-        right: -4rem;
-        top: 0rem;
+      &:hover {
         background-color: $secondary-color;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
+    }
+    a::after {
+      content: url("../assets/icon-arrow-right.svg");
+      width: 20%;
+      height: 100%;
+      position: absolute;
+      right: -4rem;
+      top: 0rem;
+      background-color: $secondary-color;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    a:hover::after {
+      background-color: $third-color;
     }
   }
 }

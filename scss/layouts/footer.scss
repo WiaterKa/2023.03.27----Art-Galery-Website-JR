@@ -3,9 +3,32 @@ footer {
   height: auto;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  background-color: $third-color;
+  padding: 8rem 16.5rem;
+  margin-top: 18rem;
 
-  .h3-footer {
-    
+  .p-secondary {
+    @include secondaryPar();
+    color: $fourth-color;
+    width: 43rem;
+  }
+
+  .logo-ftr {
+    width: 16rem;
+    height: 5.8rem;
+  }
+
+  .socials-container {
+    display: flex;
+    gap: 2rem;
+
+    svg {
+      color: rgb(255, 255, 255);
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
   }
 }

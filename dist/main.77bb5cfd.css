@@ -400,6 +400,9 @@ body {
   width: 80%;
   position: relative;
 }
+.hero .btn-hero a:hover {
+  background-color: #d5966c;
+}
 .hero .btn-hero a::after {
   content: url("/icon-arrow-right.0db7ed24.svg");
   width: 20%;
@@ -412,6 +415,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero .btn-hero a:hover::after {
+  background-color: #151515;
 }
 
 .articles {
@@ -493,6 +499,41 @@ body {
   font-size: 2.2rem;
   line-height: 3.2rem;
   color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #151515;
+  padding: 8rem 16.5rem;
+  margin-top: 18rem;
+}
+footer .p-secondary {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #151515;
+  color: #ffffff;
+  width: 43rem;
+}
+footer .logo-ftr {
+  width: 16rem;
+  height: 5.8rem;
+}
+footer .socials-container {
+  display: flex;
+  gap: 2rem;
+}
+footer .socials-container svg {
+  color: rgb(255, 255, 255);
+}
+footer .socials-container svg:hover {
+  color: #d5966c;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
