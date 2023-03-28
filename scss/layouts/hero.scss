@@ -4,17 +4,39 @@
   grid-auto-rows: 1fr;
   grid-template-rows: repeat(8, minmax(0, 1fr));
   width: 100%;
-  max-height: 80rem;
+  row-gap: 3rem;
+
+  @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-bottom: 12rem;
+  }
 
   .block-dark {
     grid-column: 1/5;
     grid-row: 1/9;
     background-color: $third-color;
+
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
   }
 
   .block-img {
     grid-column: 5/11;
     grid-row: 1/9;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 1 / 9;
+    }
+
+    @media screen and (max-width: 780px) {
+      width: 100%;
+      height: 35%;
+      object-fit: cover;
+    }
 
     img {
       width: 100%;
@@ -27,6 +49,14 @@
     grid-column: 11/15;
     grid-row: 1/9;
     background-color: $fourth-color;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 10 / 15;
+    }
+
+    @media screen and (max-width: 780px) {
+      display: none;
+    }
   }
 
   .h1-hero {
@@ -42,12 +72,36 @@
     grid-row: 3/6;
     display: flex;
     align-items: flex-start;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 8/14;
+      grid-row: 2/4;
+      font-size: 7rem;
+      line-height: 6.5rem;
+    }
+
+    @media screen and (max-width: 780px) {
+      padding-inline: 1.6rem;
+      font-size: 6rem;
+      line-height: 5.5rem;
+      margin: 0;
+    }
   }
 
   .p-primary {
     @include primaryPar($primary-color);
     grid-column: 10/14;
     grid-row: 4/6;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 8/14;
+    }
+
+    @media screen and (max-width: 780px) {
+      padding-inline: 1.6rem;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
   }
 
   .btn-hero {
@@ -57,13 +111,22 @@
     font-size: 2rem;
     line-height: 2.4rem;
     letter-spacing: 0.363636rem;
-    width: 26rem;
+    width: 30rem;
+    text-align: center;
     height: 7.2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     grid-column: 10/14;
     grid-row: 6/7;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 8/14;
+    }
+
+    @media screen and (max-width: 780px) {
+      padding: 1.6rem;
+    }
 
     a {
       background-color: $third-color;

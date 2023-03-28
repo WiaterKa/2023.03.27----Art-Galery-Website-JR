@@ -7,10 +7,33 @@
   gap: 3rem;
   padding-top: 18rem;
 
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+    gap: 1.1rem;
+    padding-top: 12rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-height: 185rem;
+    padding: 1.6rem;
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: unset;
+
+    @media screen and (max-width: 600px) {
+      // padding-inline: 1.6rem;
+      // padding-bottom: 1.6rem;
+      height: auto;
+      max-height: 48rem;
+      width: 100%;
+    }
   }
 
   .art-box-primary {
@@ -21,29 +44,68 @@
     grid-column: 3 / 8;
     grid-row: 1 /5;
 
+    @media screen and (max-width: 1100px) {
+      grid-column: 2 / 10;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-column: 1 / 25;
+      grid-row: 1/ 4;
+      padding: 2.5rem 1.6rem;
+    }
+
     .h2-articles {
       @include secondaryHeading($third-color);
       padding-bottom: 3.2rem;
+
+      @media screen and (max-width: 1330px) {
+        font-size: 5rem;
+        line-height: 4.5rem;
+      }
     }
 
     .p-primary {
       @include primaryPar($primary-color);
+
+      @media screen and (max-width: 1330px) {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
     }
   }
 
   .imgart1 {
     grid-column: 8 / 13;
     grid-row: 1 /5;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 11 / 24;
+    }
   }
 
   .imgart2 {
     grid-column: 3 / 9;
     grid-row: 5 / 12;
-  }
 
+    @media screen and (max-width: 1100px) {
+      grid-column: 2 / 15;
+    }
+
+    @media screen and (max-width: 600px) {
+      min-height: 480px;
+    }
+  }
   .imgart3 {
     grid-column: 9 / 13;
     grid-row: 5 / 8;
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 15 / 24;
+    }
+
+    @media screen and (max-width: 600px) {
+      min-height: 343px;
+    }
   }
 
   .art-box-secondary {
@@ -56,13 +118,31 @@
     background-color: $third-color;
     padding: 6.5rem 4.8rem;
 
+    @media screen and (max-width: 1100px) {
+      grid-column: 15 / 24;
+    }
+
+    @media screen and (max-width: 690px) {
+      padding: 2rem;
+    }
+
     .h2-articles {
       @include secondaryHeading($fourth-color);
       padding-bottom: 3.2rem;
+
+      @media screen and (max-width: 1330px) {
+        font-size: 5rem;
+        line-height: 4.5rem;
+      }
     }
 
     .p-primary {
       @include primaryPar($fourth-color);
+
+      @media screen and (max-width: 1330px) {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
     }
   }
 }
