@@ -639,6 +639,12 @@ body {
     padding: 2rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .articles .art-box-secondary {
+    height: 29rem;
+    padding: 4.8rem 2.4rem;
+  }
+}
 .articles .art-box-secondary .h2-articles {
   font-family: "Big Shoulders Display";
   font-style: normal;
@@ -706,6 +712,11 @@ footer .p-secondary {
 @media screen and (max-width: 1100px) {
   footer .p-secondary {
     font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  footer .p-secondary {
+    width: auto;
   }
 }
 footer .logo-ftr {

@@ -125,6 +125,10 @@
     @media screen and (max-width: 690px) {
       padding: 2rem;
     }
+    @media screen and (max-width: 600px) {
+      height: 29rem;
+      padding: 4.8rem 2.4rem;
+    }
 
     .h2-articles {
       @include secondaryHeading($fourth-color);
